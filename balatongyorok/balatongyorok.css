@@ -43,3 +43,24 @@ body {
     float: right;
     padding:20px;
 }
+
+.tablazat {
+    background-color: #B0D1F1;
+    text-align: center;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.tablazat td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+    color: red;
+}
