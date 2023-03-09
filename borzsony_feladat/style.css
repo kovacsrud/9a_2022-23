@@ -18,3 +18,13 @@ body {
  .bal_behuzas {
     margin-left: 80px;
  }
+
+ .kep_jobbra {
+   float: right;
+   width: 10%;
+ }
+
+ #terkep {
+   display: block;
+   margin: auto;
+ }

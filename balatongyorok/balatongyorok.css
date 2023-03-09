@@ -1,0 +1,45 @@
+body {
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.keret {
+    width: 1000px;
+    margin: auto;
+}
+
+#header {
+    min-width: 650px;
+    max-width: 1000px;
+    height: 150px;
+    padding: 20px;
+    background-image: url("panorama.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cimer {
+    width: 150px;
+    margin-right: 50px;
+    float: right;
+}
+
+.felkover {
+    font-weight:bold;
+}
+
+.balkeret {
+    width: 450px;
+    background-color: #5B9CEA;
+    float: left;
+    padding: 20px;
+}
+
+.jobbkeret {
+    width: 450px;
+    background-color: #5B9CEA;
+    float: right;
+    padding:20px;
+}
