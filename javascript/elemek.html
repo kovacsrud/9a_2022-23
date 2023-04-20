@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Elemek elérése</title>
+</head>
+<body>
+    <h1 id="cim">Elemek elérése</h1>
+    <button onclick="atir()">Átír</button>
+
+    <script>
+        function atir(){
+            let cim=document.getElementById('cim');
+            cim.textContent=prompt("Mi kerüljön ide?")
+        }
+        
+    </script>
+</body>
+</html>
