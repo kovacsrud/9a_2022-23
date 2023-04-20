@@ -6,14 +6,32 @@
     <title>Elemek elérése</title>
 </head>
 <body>
-    <h1 id="cim">Elemek elérése</h1>
+    <h1 id="cim" onclick="alap()">Elemek elérése</h1>
+    <input type="text" id="mezo">
     <button onclick="atir()">Átír</button>
 
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
     <script>
+        function alap(){
+            let cim=document.getElementById('cim');
+            cim.textContent="Elemek elérése";
+        }
+
         function atir(){
             let cim=document.getElementById('cim');
-            cim.textContent=prompt("Mi kerüljön ide?")
+            let mezo=document.getElementById('mezo');
+            cim.textContent=mezo.value;
         }
+
+        let listaElemek=document.getElementsByTagName('li');
+
+        document.write(listaElemek[2].textContent);
+        console.log(listaElemek[2].textContent);
         
     </script>
 </body>
