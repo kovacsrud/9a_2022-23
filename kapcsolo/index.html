@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+        
+    <title>Kapcsoló</title>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <td align="center">
+                <img id="lampa" src="bulb_off.png">
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <img id="kapcsolo" onclick="kapcsol()" src="kapcsolo_ki.png">
+            </td>
+        </tr>
+
+    </table>
+    <script>
+        function kapcsol()
+        {
+            var lampa=document.getElementById("lampa");
+            var kapcsolo=document.getElementById("kapcsolo");
+            
+            var lampa_src=lampa.src.split("/");
+            lampa_src=lampa_src[lampa_src.length-1];
+            
+            var kapcsolo_src=kapcsolo.src.split("/");
+            kapcsolo_src=kapcsolo_src[kapcsolo_src.length-1];
+            
+            if(lampa_src=="bulb_off.png"){
+                lampa.src="bulb_on.png";
+                kapcsolo.src="kapcsolo_be.png";
+            } else {
+                lampa.src="bulb_off.png";
+                kapcsolo.src="kapcsolo_ki.png";
+            }
+
+
+        }
+    </script>
+    
+</body>
+</html>
